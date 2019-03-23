@@ -1,0 +1,19 @@
+.column {
+  height: 90vh;
+  position: relative;
+  border: 1px solid #3779df;
+}
+
+.column-wrapper {
+  max-width: 50rem;
+  padding: 1.3rem;
+  display: flex;
+}
+
+.column-button {
+  margin-left: 10px;
+}
+
+.column-view {
+  display: flex;
+}

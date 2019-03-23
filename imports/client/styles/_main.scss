@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  color: #555555;
+  font-family: Quicksand, sans-serif;
+  font-size: 1.6rem;
+}
+
+
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+.wrapper {
+  max-width: 50rem;
+  padding: 1.3rem;
+}
+
+@import "components/_titlebar.scss";
+@import "components/_footer.scss";
+@import "components/_column.scss";
