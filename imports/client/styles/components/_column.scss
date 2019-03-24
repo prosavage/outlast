@@ -1,5 +1,5 @@
 .column {
-  width:15%;
+  width:20%;
 
 position: relative;
 padding:10px;
@@ -32,6 +32,10 @@ margin: 10px;
   .column {
     width:25%;
     margin: 7px;
+  }
+  .title-bar{
+    height: fit-content;
+    padding:10px;
   }
 }
 @media(max-width:768px){
