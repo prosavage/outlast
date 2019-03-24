@@ -62,15 +62,14 @@ class Column extends React.Component {
 
     generateRGB() {
         console.log('Colors...');
-        if (this.calculatePoints() / (this.props.tasks.length * 10) === 1) {
-            console.log("green");
+        if (this.props.tasks.length === 0) {
+            return 'rgba(100,154,255,0.2)'
+        } else if (this.calculatePoints() / (this.props.tasks.length * 10) === 1) {
             return 'rgba(112,255,100,0.2)';
         } else if (this.calculatePoints() === 0) {
-            console.log('red');
             return 'rgba(255,100,124,0.2)'
         } else {
-            console.log('blue');
-            return ;
+            return 'rgba(100,154,255,0.2)'
         }
     };
 
