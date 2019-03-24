@@ -5,6 +5,7 @@ class AddTask extends React.Component {
     addTask(e) {
         e.preventDefault();
         let taskName = document.getElementById('name-of-task-' + this.props.id).value;
+        document.getElementById('name-of-task-' + this.props.id).value = '';
         if (taskName) {
             let user = Users.findOne({_id: this.props.id});
             let tasks = user.tasks;

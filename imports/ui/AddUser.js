@@ -5,6 +5,7 @@ class AddUser extends React.Component {
     addUser() {
         event.preventDefault();
         let nameOfPlayer = document.getElementById('name-of-user').value;
+        document.getElementById('name-of-user').value = '';
         if (nameOfPlayer) {
             Users.insert({name: nameOfPlayer, tasks: []});
         }
@@ -33,6 +34,7 @@ class AddUser extends React.Component {
 
     addGroupTask() {
         let taskName = document.getElementById('name-of-user').value;
+        document.getElementById('name-of-user').value = '';
         if (taskName) {
             let users = Users.find().fetch();
             users.forEach((user) => {
