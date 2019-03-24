@@ -76,6 +76,7 @@ h1 {
 
 .x-button:hover {
   background-color: #1e60d2;
+  cursor:pointer;
 }
 
 
@@ -87,14 +88,11 @@ h1 {
   text-align: center;
   text-decoration: none;
 }
-.leaderboard-button {
-  background-color: #1e60d2;
-  color: white;
-  border: none;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
+.input-button:hover{
+  background-color: #0840a0;
+  cursor:pointer;
 }
+
 
 
 .hidden {
