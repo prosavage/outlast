@@ -58,6 +58,10 @@ class Column extends React.Component {
         return 'rgba(' + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ", 0.2)";
     }
 
+    deleteColumn() {
+        Users.remove({_id: this.props.id});
+    }
+
     render() {
         return (
                 <div style={{backgroundColor: this.generateRGB()}} className={"column"}>
@@ -75,7 +79,10 @@ class Column extends React.Component {
                                 </div>
                                 {this.renderTasks()}
                                 <br/>
-                                <h1>{this.calculatePoints()} Points</h1>
+                                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                    <h1>{this.calculatePoints()} Points</h1>
+                                    <button onClick={this.deleteColumn.bind(this)} className={'x-button'}>X</button>
+                                </div>
                             </div>
 
                         </div>
