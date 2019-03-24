@@ -64,7 +64,7 @@ class Column extends React.Component {
 
     render() {
         return (
-                <div style={{backgroundColor: this.generateRGB()}} className={"column"}>
+                <div style={{backgroundColor: 'rgba(112,147,212,0.2)'}} className={"column"}>
                     <div className={"card-wrapper"}>
                         <div className={"wrapper"}>
                             <div className={"card"}>
