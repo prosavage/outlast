@@ -6,10 +6,10 @@ import ColumnView from "./ColumnView";
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className={"appBody"}>
                 <TitleBar title={"Outlast"}/>
                 <ColumnView users={this.props.users}/>
-                <Footer/>
+                {/*<Footer/>*/}
             </div>
         )
     }

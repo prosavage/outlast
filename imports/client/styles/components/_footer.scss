@@ -1,9 +1,9 @@
 .footer {
-  position: absolute;
-  bottom: 0;
   background-image: linear-gradient(to right, #4485e5, #3779df, #2a6cd9, #1e60d2, #1353cb);
   color: white;
   font-weight: 700;
-  width: 100vw;
-  height: 5vh;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
 }

@@ -7,11 +7,14 @@ class ColumnView extends React.Component {
         this.state = { amt: this.props.users.length }
     }
     renderColumns() {
-        console.log(this.state.amt);
         let columns = [];
         let amount = this.props.users.length;
         for (let i = 0; i < amount; i++) {
-            columns[i] = <Column width={100 / amount} name={this.props.users[i].name}/>
+            columns[i] = <Column
+                tasks={this.props.users[i].tasks}
+                width={100 / amount}
+                name={this.props.users[i].name}
+                id={this.props.users[i]._id}/>
         }
         return columns;
     }

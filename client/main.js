@@ -8,7 +8,6 @@ import {Tracker} from 'meteor/tracker';
 Meteor.startup(() => {
   Tracker.autorun(() => {
     let users = Users.find().fetch();
-    console.log(users);
     ReactDOM.render(<App users={users}/>, document.getElementById("app"))
   });
 });

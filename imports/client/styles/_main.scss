@@ -1,19 +1,28 @@
 * {
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 body {
+  height:100%;
   color: #555555;
   font-family: Quicksand, sans-serif;
   font-size: 1.6rem;
 }
-
+.appBody{
+  display: flex;
+  position: relative;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
 
 h1 {
   font-weight: 300;
@@ -24,7 +33,66 @@ h1 {
   max-width: 50rem;
   padding: 1.3rem;
 }
+#app{
+  height: 100%;
+}
+
+.image {
+  width: 160px;
+  height: 30px;
+}
+
+.container{
+
+  display:Flex;
+  height: 100%;
+}
+
+.small-margin {
+  margin: 10px
+}
+
+.small-padding {
+  padding: 5px;
+}
+
+.flex-on-those-hoes {
+  display: flex;
+}
+
+.input-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0);
+  height: 35px;
+}
+
+.x-button {
+  background-color: #7aabf4;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
+
+.x-button:hover {
+  background-color: #1e60d2;
+}
+
+
+.input-button {
+  background-image: linear-gradient(to right top, #7aabf4, #6095eb, #487fe2, #2f69d7, #1353cb);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
 
 @import "components/_titlebar.scss";
 @import "components/_footer.scss";
 @import "components/_column.scss";
+@import "components/_checkbox.scss";

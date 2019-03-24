@@ -1,12 +1,17 @@
 .column {
-  height: 90vh;
-  position: relative;
-  border: 1px solid #3779df;
-}
+  width:15%;
 
+position: relative;
+padding:10px;
+margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+.taskInput{
+  width: 100%;
+}
 .column-wrapper {
-  max-width: 50rem;
-  padding: 1.3rem;
+  max-width: 100%;
   display: flex;
 }
 
@@ -16,4 +21,24 @@
 
 .column-view {
   display: flex;
+  align-content: space-between;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media(max-width:992px){
+  .column {
+    width:25%;
+    margin: 7px;
+  }
+}
+@media(max-width:768px){
+  .column {
+    margin: 5px;
+    width:40%;
+    position: relative;
+    border: 1px solid #3779df;
+  }
 }

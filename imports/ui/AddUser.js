@@ -6,15 +6,15 @@ class AddUser extends React.Component {
     addUser() {
         let nameOfPlayer = document.getElementById('name-of-user').value;
         if (nameOfPlayer) {
-            Users.insert({name: nameOfPlayer});
+            Users.insert({name: nameOfPlayer, tasks: []});
         }
 
     }
     render() {
         return (
             <React.Fragment>
-                <input id={'name-of-user'}/>
-                <button className={"column-button"} onClick={this.addUser.bind(this)}>Add User</button>
+                <input className={"column-button input-shadow"} id={'name-of-user'}/>
+                <button className={"column-button input-button"} onClick={this.addUser.bind(this)}>Add User</button>
             </React.Fragment>
 
         );
