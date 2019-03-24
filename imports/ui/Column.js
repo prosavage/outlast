@@ -69,7 +69,7 @@ class Column extends React.Component {
         } else if (this.calculatePoints() === 0) {
             return 'rgba(255,100,124,0.2)'
         } else {
-            return 'rgba(100,154,255,0.2)'
+            return 'rgba(234,200,0,0.2)'
         }
     };
 
