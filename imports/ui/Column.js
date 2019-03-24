@@ -3,8 +3,6 @@ import AddTask from "./AddTask";
 import {Users} from "../../lib/Users";
 
 
-
-//<div style={{width: this.props.width + "vw"}} className={"column"}>
 class Column extends React.Component {
     removeTask(i) {
         let user = Users.findOne({_id: this.props.id});
@@ -72,17 +70,17 @@ class Column extends React.Component {
                                     <AddTask id={this.props.id}/>
                                 </div>
                                 <div>
+                                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
                                     <h2>{this.props.name}</h2>
+                                    <button onClick={this.deleteColumn.bind(this)} className={'x-button'}>X</button>
+                                    </div>
                                     <br/>
                                     <h4>Tasks</h4>
                                     <br/>
                                 </div>
                                 {this.renderTasks()}
                                 <br/>
-                                <div style={{display: 'flex', justifyContent: 'space-between'}}>
                                     <h1>{this.calculatePoints()} Points</h1>
-                                    <button onClick={this.deleteColumn.bind(this)} className={'x-button'}>X</button>
-                                </div>
                             </div>
 
                         </div>
