@@ -31,7 +31,7 @@ class Column extends React.Component {
             tasks[i] = <ul>
             <label className={'container'}>
 
-                <input onClick={this.changeTaskStatus.bind(this, i)} className={"small-padding small-margin checkmark"} id={'checkbox-' + this.props.id} type={'checkbox'}/>
+                <input onClick={this.changeTaskStatus.bind(this, i)} className={"small-padding small-margin checkmark"} checked={this.props.tasks[i].status} id={'checkbox-' + this.props.id} type={'checkbox'}/>
                 <span className={'checkmark'}/>
                 {this.props.tasks[i].task}
                 <button onClick={this.removeTask.bind(this, i)} className={"small-padding small-margin x-button"}>x</button>
