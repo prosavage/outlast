@@ -80,7 +80,7 @@ class Column extends React.Component {
                                 </div>
                                 {this.renderTasks()}
                                 <br/>
-                                    <h1>{this.calculatePoints()} Points</h1>
+                                    <h1 style={{    position: "absolute", bottom: "15px"}}>{this.calculatePoints()} Points</h1>
                             </div>
 
                         </div>
