@@ -20,7 +20,7 @@ class AddTask extends React.Component {
         return (
             <React.Fragment>
                 <form>
-                    <input id={'name-of-task-' + this.props.id} className={"taskInput input-shadow"}/>
+                    <input id={'name-of-task-' + this.props.id} placeholder={'   Add a Task...'} className={"taskInput input-shadow"}/>
                     <button className={'hidden small-margin'} onClick={this.addTask.bind(this)}>New Task</button>
                     <br/>
                 </form>
