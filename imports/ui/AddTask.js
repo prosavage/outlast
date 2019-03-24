@@ -24,6 +24,7 @@ class AddTask extends React.Component {
                     <button className={'hidden small-margin'} onClick={this.addTask.bind(this)}>New Task</button>
                     <br/>
                 </form>
+
                 <br/>
             </React.Fragment>
 

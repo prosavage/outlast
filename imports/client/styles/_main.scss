@@ -80,13 +80,22 @@ h1 {
 
 
 .input-button {
-  background-image: linear-gradient(to right top, #7aabf4, #6095eb, #487fe2, #2f69d7, #1353cb);
+  background-color: #2a6cd9;
   color: white;
   border: none;
   padding: 12px 32px;
   text-align: center;
   text-decoration: none;
 }
+.leaderboard-button {
+  background-color: #1e60d2;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 .hidden {
   display: none;

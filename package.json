@@ -9,6 +9,7 @@
     "imports": "^1.0.0",
     "meteor-node-stubs": "~0.2.4",
     "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react-dom": "^16.8.5",
+    "react-popup": "^0.10.0"
   }
 }
